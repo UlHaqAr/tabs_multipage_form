@@ -1,0 +1,107 @@
+<!-- <mat-card class="ongoing-card">
+  <mat-card-header>
+    <div mat-card-avatar class="ongoing-header-image"></div>
+    <mat-card-title class="card-title" style="color: rgb(64, 238, 209) ;">On-going Events</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-cards-list></app-cards-list>
+  </mat-card-content>
+</mat-card>
+<mat-card class="upcoming-card">
+  <mat-card-header>
+    <div mat-card-avatar class="upcoming-header-image"></div>
+    <mat-card-title class="card-title" style="color:rgb(82, 182, 240) ;">Upcoming Events</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-cards-list></app-cards-list>
+  </mat-card-content>
+</mat-card>
+<mat-card class="past-card">
+  <mat-card-header>
+    <div mat-card-avatar class="past-header-image"></div>
+    <mat-card-title class="card-title" style="color:rgb(153, 152, 152) ;">Past Events</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-cards-list></app-cards-list>
+  </mat-card-content>
+</mat-card>  -->
+
+<div class="mainContainer">
+  <div class="titleAndPortalHead">
+    <div class="titlebar">
+      <div class="office-logo">
+        <a routerLink="/home">
+          <img class="lam-logo" src="./assets/images/lam_logo_wh.png" alt="Lam Research">
+        </a>
+      </div>
+      <div>
+        <button mat-icon-button >
+          <mat-icon style="font-size: 30px;color: aliceblue;">settings</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="portalCardAndInfo">
+      <div class="portalCard">
+        <p>LAM</p>
+        <p>EVENT</p>
+        <p>PORTAL</p>
+      </div>
+      <div class="portalInfo">
+        <div class="eventPortalDesc">
+          <p>The event management feature helps you to organize, manage, and process the events. When you install the event management solution, you get an event portal which gives the users a web application where they can get to know more about the event details.</p>
+        </div>
+        <div class="userLoggedIn">
+          <p>{{loggeduser.fullname}}</p>
+        </div>
+        <div class="portalBtns">
+          <div class="dropdown">
+            <button  class="dropbtn">Create</button>
+            <div class="dropdown-content">
+              <a (click)="onPosterCreate()">Poster</a>
+              <a (click)="onPosterCreate()">Hackathon</a>
+              <a (click)="onGuessLogoCreate()">Guess Logo</a>
+            </div>
+          </div>
+          <button mat-raised-button>My Events</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="allCardsList">
+    <mat-card class="ongoing-card">
+      <mat-card-header>
+        <div mat-card-avatar class="ongoing-header-image"></div>
+        <mat-card-title class="card-title" style="color: rgb(30, 212, 182) ;">On-going Events</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-cards-list [cardsList]="ongoingCardsList"></app-cards-list>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="upcoming-card">
+      <mat-card-header>
+        <div mat-card-avatar class="upcoming-header-image"></div>
+        <mat-card-title class="card-title" style="color:rgb(82, 182, 240) ;">Upcoming Events</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-cards-list [cardsList]="upcomingCardsList"></app-cards-list>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="past-card">
+      <mat-card-header>
+        <div mat-card-avatar class="past-header-image"></div>
+        <mat-card-title class="card-title" style="color:rgb(153, 152, 152) ;">Past Events</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-cards-list [cardsList]="pastCardsList"></app-cards-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="footerData">
+    <div><p>Contact</p></div>
+    <div><p>Calendar</p></div>
+    <div><p></p></div>
+    <!-- <div class="app-footer"> -->
+      <div><p>© 2020 LAM RESEARCH CORPORATION  |  ALL RIGHTS RESERVED</p></div>
+    <!-- </div> -->
+  </div>
+</div>

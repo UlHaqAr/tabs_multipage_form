@@ -1,0 +1,169 @@
+  .ongoing-card{
+    width: 90%;
+    height: 310px;
+    margin: 50px 50px;
+    box-shadow: 8px 8px 15px rgb(102, 235, 213);
+    border: 2px solid rgb(102, 235, 215);
+    background: linear-gradient(to right, rgb(235, 247, 235,0.8), rgb(212, 247, 212,0.8));
+  }
+
+  .ongoing-header-image {
+    background-image: url('src\assets\images\ongoing.jpg');
+    background-size: cover;
+  }
+
+  .upcoming-card{
+    width: 90%;
+    height: 310px;
+    margin: 50px 50px;
+    box-shadow: 8px 8px 15px rgb(112, 188, 231);
+    border: 2px solid rgb(112, 188, 231);
+    background: linear-gradient(to right, rgb(235, 244, 247,0.8), rgb(207, 240, 248,0.8));
+  }
+  .past-card {
+    width: 90%;
+    height: 310px;
+    margin: 50px 50px;
+    box-shadow: 8px 8px 15px grey;
+    border: 2px solid gray;
+    background: linear-gradient(to right, rgb(241, 241, 241,0.8), rgb(197, 198, 199,0.8));
+  }
+  
+  .upcoming-header-image {
+    background-image: url('src\assets\images\upcoming.jpg');
+    background-size: cover;
+  }
+  .past-header-image {
+    background-image: url('src\assets\images\past.jpg');
+    background-size: cover;
+  }
+  .card-title {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size:26px;
+  }
+  
+
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: url("src\assets\images\homepageBckgrnd.jpg");
+  }
+
+  .titleAndPortalHead{
+    height: 25%;
+  }
+
+  .titlebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .portalCardAndInfo{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portalCard{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("src\assets\images\portalCardImage.jpg");
+    margin: 30px 50px;
+    border-radius: 5px;
+    border: 2px solid white;
+  }
+ 
+  .portalCard p {
+    font-size: 35px;
+    letter-spacing: 8px;
+    font-weight: 800;
+    color: white;
+    margin: 5px;
+  }
+
+  .portalInfo{
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 50px;
+    border-radius: 5px;
+  }
+
+  .portalInfo p{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+    margin: 5px;
+  }
+
+  .portalBtns{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .portalBtns button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    margin: 10px;
+    font-weight: 300;
+    background:  rgb(199, 82, 61);
+    box-shadow: 8px 8px 15px rgb(102, 235, 213);
+  }
+
+  .footerData{
+    background: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footerData p{
+    color: white;
+    font-size: 20px;
+  }
+
+  /* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+  
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgb(207, 111, 94);}

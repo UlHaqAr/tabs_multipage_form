@@ -1,0 +1,106 @@
+<div class="parent-container">
+    <div class="container">
+        <header>Signup Form</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p #p1>basic</p>
+                <div class="bullet" #bullet1>
+                    <span>1</span>
+                </div>
+                <!-- <div class="check fas fa-check" #check1></div> -->
+            </div>
+            <div class="step">
+                <p #p2>contact</p>
+                <div class="bullet" #bullet2>
+                    <span>2</span>
+                </div>
+                <!-- <div class="check fas fa-check" #check2></div> -->
+            </div>
+            <div class="step">
+                <p #p3>dob</p>
+                <div class="bullet" #bullet3>
+                    <span>3</span>
+                </div>
+                <!-- <div class="check fas fa-check" #check3></div> -->
+            </div>
+            <div class="step">
+                <p #p4>log in</p>
+                <div class="bullet" #bullet4>
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check" #check4></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form action="#">
+                <div class="page" #basicInfoPage>
+                    <div class="title">Basic Info</div>
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="field">
+                        <div class="label">Last Name</div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="field">
+                        <button (click)="onNext0Click(basicInfoPage,p1,bullet1,check1)">Next</button>
+                    </div>
+                </div>
+    
+                <div class="page" #contactInfoPage>
+                    <div class="title">Contact Info</div>
+                    <div class="field">
+                        <div class="label">E-mail address </div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="field">
+                        <div class="label">Phone</div>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev" (click)="onPrev1Click(basicInfoPage,p1,bullet1,check1)">Prev</button>
+                        <button class="next-1 next" (click)="onNext1Click(basicInfoPage,p2,bullet2,check2)">Next</button>
+                    </div>
+                </div>
+    
+                <div class="page" #dobPage>
+                    <div class="title">DOB</div>
+                    <div class="field">
+                        <div class="label">date</div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="field">
+                        <div class="label">gender</div>
+                        <select name="gender" id="">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev" (click)="onPrev2Click(basicInfoPage,p2,bullet2,check2)">Prev</button>
+                        <button class="next-2 next" (click)="onNext2Click(basicInfoPage,p3,bullet3,check3)">Next</button>
+                    </div>
+                </div>
+    
+                <div class="page" #loginDetailPage>
+                    <div class="title">Login</div>
+                    <div class="field">
+                        <div class="label">user name</div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="field">
+                        <div class="label">pass word</div>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-3 prev" (click)="onPrev3Click(basicInfoPage,p3,bullet3,check3)">Prev</button>
+                        <button class="Submit" (click)="onSubmitClick(basicInfoPage,p4,bullet4,check4)">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
